@@ -11,7 +11,7 @@ class ArchForge < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/arch-forge/cli/releases/download/v1.0.0/cli_1.0.0_darwin_amd64.tar.gz"
-      sha256 "829fa8764ec2379f7974a750b086b222eabf9d29e26c3771ae4f3b49a21a8762"
+      sha256 "8355d49e760fab1bbef87b653295cd3f2d451331c2f1d6c35579ce030c5fe2ac"
 
       define_method(:install) do
         bin.install "arch_forge"
@@ -19,7 +19,7 @@ class ArchForge < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/arch-forge/cli/releases/download/v1.0.0/cli_1.0.0_darwin_arm64.tar.gz"
-      sha256 "b9175c1e9812526657ce7cc60007a7e3871b874200ea273eb3032a085896e93f"
+      sha256 "a99775cfd2ed7cc6feeaed8cf500aed0b624f3e71296d41ff1d36037c8302a22"
 
       define_method(:install) do
         bin.install "arch_forge"
@@ -30,14 +30,14 @@ class ArchForge < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/arch-forge/cli/releases/download/v1.0.0/cli_1.0.0_linux_amd64.tar.gz"
-      sha256 "f5407383c9d722cbf8279cab2b2850e9b0025229e1d83d8f4203e775c9062dbe"
+      sha256 "9e2ebd2636b8bc28ccb195cf83e1bde1778f124336e6616521a63c0eabadb4c1"
       define_method(:install) do
         bin.install "arch_forge"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/arch-forge/cli/releases/download/v1.0.0/cli_1.0.0_linux_arm64.tar.gz"
-      sha256 "041ff5f3329b24970007d4b7348f6e13ac27e9078aef9dce27e86c4a192a2297"
+      sha256 "e67b524da4c6dd379a3f11e21245160b870e8226f49a13d2e30f04ee358ff702"
       define_method(:install) do
         bin.install "arch_forge"
       end
